@@ -11,7 +11,7 @@ const Login = ({setShowLogin,myStorage,setCurrentUser}) => {
         username:"",
         password:""
    })
-    const url = 'http://localhost:8800';
+    const url = 'https://mapit.onrender.com';
     const onChangeHandler = (e) =>{
         const name = e.target.name;
         const value = e.target.value;
