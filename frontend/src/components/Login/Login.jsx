@@ -11,7 +11,7 @@ const Login = ({setShowLogin,myStorage,setCurrentUser}) => {
         username:"",
         password:""
    })
-    const url = 'https://mapit-backend-8s00.onrender.com';
+    const url = 'https://mapit-backend.onrender.com';
     const onChangeHandler = (e) =>{
         const name = e.target.name;
         const value = e.target.value;
