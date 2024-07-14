@@ -6,6 +6,7 @@ import Pinrouter from './routes/pins.js';
 import UserRouter from './routes/users.js';
 import cors from 'cors'
  
+dotenv.config();
 
 const app = express();
 app.use(express.json());
@@ -16,7 +17,7 @@ dbconnect();
 app.use("/api/pins", Pinrouter)
 app.use("/api/users", UserRouter)
 
-const PORT = 8800
+const PORT = process.env.PORT || 8800
 app.listen(PORT , ()=>{
     console.log(`Server started at port ${PORT}`)
 })
