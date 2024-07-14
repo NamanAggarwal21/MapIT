@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }
+  .leaflet-container{
+    height: 92.8vh;
+  }
+  .card{
+    width:250px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  label{
+    width: max-content;
+    color: tomato;
+    font-size: 13px;
+    border-bottom: 0.5px solid tomato;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+  .desc{
+  font-size: 14px;
+  }
+  .star{
+  color: gold;
+  }
+  .username{
+  font-size: 14px;
+  }
+  .date{
+    font-size: 12px;
+  }
+  .marker{
+    cursor: pointer;
+  }
+  form{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  input ,textarea{
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+  input::placeholder , textarea::placeholder{
+    font-size: 12px;
+    color:rgb(172,169,169);
+  }
+  .submitButton{
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    background-color: tomato;
+    cursor: pointer;
+  }
+  

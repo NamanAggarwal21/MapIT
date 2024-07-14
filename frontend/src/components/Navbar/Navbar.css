@@ -1,0 +1,51 @@
+.heading {
+    margin: 0;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heading-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+  }
+  .heading-container h3{
+    margin-left: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+  }
+  .logo{
+    height: 30px;
+  }
+  .heading .left{
+    margin-right: 15px;
+  }
+ 
+.button{
+  border:none;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.login{
+  background-color: teal;
+  margin-right: 15px;
+}
+.logout{
+  background-color: tomato;
+}
+.register{
+  background-color: slateblue;
+  margin-right: 12px;
+}
+.buttons ,.logout{
+  right: 10px;
+}
