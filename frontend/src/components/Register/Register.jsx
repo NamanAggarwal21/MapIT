@@ -7,7 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 const Register = ({setShowRegister}) => {
     const [success,setSuccess] = useState(false);
     const [error,setError] = useState(false);
-    const url = "https://mapit-backend-8s00.onrender.com"
+    const url = "https://mapit-backend.onrender.com"
     
     const [data , setData] = useState({
         username:"",
