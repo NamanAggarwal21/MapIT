@@ -17,7 +17,7 @@ dbconnect();
 app.use("/api/pins", Pinrouter)
 app.use("/api/users", UserRouter)
 
-const PORT = process.env.PORT || 8800
-app.listen(PORT , ()=>{
-    console.log(`Server started at port ${PORT}`)
+const port = process.env.PORT || 8800
+app.listen(port , ()=>{
+    console.log(`Server started at port ${port}`)
 })
