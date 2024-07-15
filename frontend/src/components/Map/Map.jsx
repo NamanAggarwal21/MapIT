@@ -16,7 +16,7 @@ import NearMe from '@mui/icons-material/NearMe';
 
 const Map = ({currentUser}) => {
 
-  const url = "http://localhost:8800";
+  const url = "https://mapit-backend.onrender.com";
   const [pins , setPins] = useState([]);
   const [newPlace , setNewPlace] = useState(null);
   
