@@ -30,7 +30,8 @@ const Map = ({currentUser}) => {
   // _________________________________________________________________________________________________________
   
   function LocationMarker() {
-    const [position, setPosition] = useState(null)
+    const [position, setPosition] = useState(null);
+    setNewPlace(null);
     const map = useMapEvents({
       dblclick() {
         map.locate()
