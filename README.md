@@ -32,5 +32,4 @@ This template provides a minimal setup to get React working in Vite with HMR and
 <img width="944" alt="UserDescription" src="https://github.com/user-attachments/assets/b64fd443-ebdb-4ea7-9a3c-49d266d8df39">
 <img width="944" alt="CreatingMarker" src="https://github.com/user-attachments/assets/1b6f99c3-04d8-4c3a-b0ed-5182edb5864b">
 
-# live link  →
 
