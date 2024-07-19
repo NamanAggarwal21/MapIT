@@ -34,4 +34,3 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 # live link  →
 
-https://map-it-frontend-5k5uzf20q-namanaggarwal21s-projects.vercel.app/
