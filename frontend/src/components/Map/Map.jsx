@@ -14,10 +14,10 @@ import NearMe from '@mui/icons-material/NearMe';
 
 
 
-const Map = ({currentUser}) => {
+const Map = ({currentUser , pins , setPins}) => {
 
   const url = "http://localhost:8800";
-  const [pins , setPins] = useState([]);
+  
   const [newPlace , setNewPlace] = useState(null);
   
   
@@ -30,7 +30,8 @@ const Map = ({currentUser}) => {
   // _________________________________________________________________________________________________________
   
   function LocationMarker() {
-    const [position, setPosition] = useState(null)
+    const [position, setPosition] = useState(null);
+    setNewPlace(null);
     const map = useMapEvents({
       dblclick() {
         map.locate()
@@ -46,8 +47,8 @@ const Map = ({currentUser}) => {
   
     return position === null ? null : (
       <Marker position={position} icon={new Icon({
-              iconUrl : assets.locateMe,
-              iconSize: [31,31],
+              iconUrl : assets.locationIconYellow,
+              iconSize: [36,36],
         }) }>
         <Popup>You are here</Popup>
       </Marker>
@@ -104,7 +105,8 @@ const Map = ({currentUser}) => {
         const res = await axios.post(`${url}/api/pins` , newPin);
         setPins([...pins,res.data]);
         setNewPlace(null)
-      } catch (error) {
+      } 
+      catch (error) {
         console.log(error.message);
       }
     }

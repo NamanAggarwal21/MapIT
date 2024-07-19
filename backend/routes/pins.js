@@ -14,6 +14,18 @@ Pinrouter.post('/' , async (req,res) =>{
     }
 });
 
+Pinrouter.get('/search' , async(req,res)=>{
+    try {
+
+        const dataList = await pinModel.find({username:req.query.username});
+        res.status(200).json(dataList); 
+        
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+})
+
 Pinrouter.get('/', async(req,res)=>{
     try {
         const pins = await pinModel.find();

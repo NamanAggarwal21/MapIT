@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Map from './components/Map/Map'
@@ -12,12 +12,13 @@ const App = () => {
   const [currentUser,setCurrentUser] = useState(myStorage.getItem('user'));
   const [showRegister , setShowRegister] = useState(false);
   const [showLogin , setShowLogin] = useState(false);
-
-
+  const [pins , setPins] = useState([]);
+   
+  
   return (
     <div className='container'>
-      <Navbar currentUser={currentUser} setShowLogin={setShowLogin} setShowRegister={setShowRegister} myStorage={myStorage}  setCurrentUser={setCurrentUser}/>
-      <Map currentUser={currentUser}/>
+      <Navbar currentUser={currentUser} setShowLogin={setShowLogin} setShowRegister={setShowRegister} myStorage={myStorage}  setCurrentUser={setCurrentUser} pins={pins} setPins={setPins}/>
+      <Map currentUser={currentUser} pins={pins} setPins={setPins}/>
       {showRegister && <Register setShowRegister={setShowRegister}/>}
       {showLogin && <Login setShowLogin={setShowLogin} myStorage={myStorage}  setCurrentUser={setCurrentUser}/>}
       

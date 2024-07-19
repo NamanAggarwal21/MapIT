@@ -21,6 +21,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size:larger;
   }
+  
   .logo{
     height: 30px;
   }
@@ -49,3 +50,31 @@
 .buttons ,.logout{
   right: 10px;
 }
+
+.input-wrapper{
+  background-color: black;  
+  display: flex;
+  border-radius: 10px;
+  height: 2rem;
+  padding: 0 5px;
+  box-shadow: 0px 0px 6px #ddd;
+  align-items: center;
+}
+.input-wrapper input{
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  width: 100%;
+  margin-right: 5px;
+  color: white;
+}
+.input-wrapper input:focus{
+  outline: none;
+  border-radius: 10px;
+  background-color: black;
+}
+#search-icon{
+  color: royalblue;
+  cursor: pointer;
+}
+
