@@ -13,7 +13,7 @@ body {
     monospace;
   }
   .leaflet-container{
-    height: 89.9vh;
+    height: 100vh;
   }
   .card{
     width:250px;
