@@ -78,3 +78,28 @@
   cursor: pointer;
 }
 
+@media(max-width:600px){
+  .input-wrapper{
+    max-width:150px ;
+  }
+  .heading-container h3{
+    font-size: medium;
+  }
+  .heading-container .logo{
+    height: 22px;
+  }
+}
+
+@media(max-width:500px){
+  .input-wrapper{
+    max-width:80px ;
+  }
+}
+
+@media(max-width:400px){
+  .input-wrapper{
+    max-width:50px ;
+  }
+}
+
+
