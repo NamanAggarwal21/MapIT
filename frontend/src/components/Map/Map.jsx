@@ -47,7 +47,7 @@ const Map = ({currentUser , pins , setPins}) => {
   
     return position === null ? null : (
       <Marker position={position} icon={new Icon({
-              iconUrl : assets.locationIconYellow,
+              iconUrl : assets.locateMe,
               iconSize: [36,36],
         }) }>
         <Popup>You are here</Popup>
