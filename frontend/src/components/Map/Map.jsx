@@ -183,9 +183,10 @@ const Map = ({currentUser , pins , setPins}) => {
         
         <MapContainer center={center} zoom={5} scrollWheelZoom={true} className='map' >
                 
-                
-                {
-                  currentUser == null ? <LocationMarker/> : <DetectDoubleClick/>
+               {
+                  currentUser == null ? <LocationMarker/> : <DetectDoubleClick icon={ new Icon({iconUrl : 'http://localhost:5173/node_modules/leaflet/dist/images/marker-icon-2x.png',
+                    shadowUrl: '',
+                    iconSize: [31,31],})}/>
                 }
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
